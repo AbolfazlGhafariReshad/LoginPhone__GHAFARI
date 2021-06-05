@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <Button
+        android:id="@+id/ac_start_btn_submit"
+        android:layout_width="219dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="244dp"
+        android:text="ارسال کد اعتبارسنجی"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtmobileview"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/ac_start_txt_phone"
+        android:layout_width="293dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:gravity="center|left"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:numeric="integer"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/ac_start_btn_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtmobileview"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtmobileview"
+        android:layout_width="293dp"
+        android:layout_height="63dp"
+        android:foregroundGravity="left|bottom"
+        android:gravity="center|left|center_vertical|end"
+        android:text="شماره موبایل خود را وارد نمایید"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
